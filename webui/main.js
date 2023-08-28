@@ -101,7 +101,7 @@ function processWebuiSettingsJson (settings) {
 }
 
 function main () {
-  setupSections()
+  // setupSections()
 
   window.fetch('webUiSettings.json').then(res => {
     return res.json()

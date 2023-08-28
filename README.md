@@ -96,7 +96,7 @@ actions:
     - name: host
       title: host
       type: ascii_identifier
-      default: example.com
+      default: api-stage.minforcode.com
 
     - name: count
       title: Count

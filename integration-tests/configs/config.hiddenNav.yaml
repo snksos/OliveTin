@@ -9,6 +9,6 @@ checkForUpdates: false
 
 # Actions (buttons) to show up on the WebUI:
 actions:
-- title: Ping example.com
-  shell: ping example.com -c 1
+- title: Ping api-stage.minforcode.com
+  shell: ping api-stage.minforcode.com -c 1
   icon: ping

@@ -1,203 +1,203 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
+<head>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>OliveTin</title>
-		<link rel = "stylesheet" type = "text/css" href = "style.css" />
-		<link rel = "shortcut icon" type = "image/png" href = "OliveTinLogo.png" />
+  <title>OliveTin</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="OliveTinLogo.png" />
 
-		<link rel = "apple-touch-icon" sizes="57x57" href="OliveTinLogo-57px.png" />
-		<link rel = "apple-touch-icon" sizes="120x120" href="OliveTinLogo-120px.png" />
-		<link rel = "apple-touch-icon" sizes="180x180" href="OliveTinLogo-180px.png" />
-	</head>
+  <link rel="apple-touch-icon" sizes="57x57" href="OliveTinLogo-57px.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="OliveTinLogo-120px.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="OliveTinLogo-180px.png" />
+</head>
 
-	<body>
-		<main title = "main content">
-			<div id = "perma-widget" hidden>
-				<div id = "sidebar-toggle-wrapper">
-					<label for = "sidebar-toggler" id = "sidebar-toggler-button" title = "Toggle sidebar" tabindex = "0">&#9776;</label>
-				</div>
-				<h1 id = "page-title">OliveTin</h1>
-			</div>
-
-
-			<div id = "content-sidebar">
-				<input type = "checkbox" id = "sidebar-toggler" hidden checked />
-				<aside>
-					<ul>
-						<li>Foo</li>
-						<li>Bar</li>
-					</ul>
-				</aside>
-			</div>
-			<fieldset id = "section-switcher" title = "Sections">
-				<button id = "showActions">Actions</button>
-				<button id = "showLogs">Logs</button>
-			</fieldset>
-
-			<section id = "contentLogs" title = "Logs" hidden>
-				<table title = "Logs">
-					<thead>
-						<tr>
-							<th>Timestamp</th>
-							<th>Log</th>
-							<th>Exit Code</th>
-						</tr>
-					</thead>
-					<tbody id = "logTableBody" />
-				</table>
-			</section>
-
-			<section id = "contentActions" title = "Actions" hidden >
-				<fieldset id = "root-group" title = "Dashboard of buttons">
-				</fieldset>
-			</section>
-
-			<noscript>
-				<div class = "error">Sorry, JavaScript is required to use OliveTin.</div>
-			</noscript>
-		</main>
-
-		<footer title = "footer">
-			<p><img title = "application icon" src = "OliveTinLogo.png" alt = "OliveTin logo" height = "1em" class = "logo" /> OliveTin</p>
-			<p>
-				<a href = "https://docs.olivetin.app" target = "_new">Documentation</a> |
-				<a href = "https://github.com/OliveTin/OliveTin/issues/new/choose" target = "_new">Raise an issue on GitHub</a> |
-				<span>Version: <span id = "currentVersion">?</span></span> |
-				<span>Server connection: <span id = "serverConnection">?</span></span>
-			</p>
-			<p>
-				<a id = "available-version" href = "http://olivetin.app" target = "_blank" hidden>?</a>
-			</p>
-		</footer>
-
-		<dialog id = "executionResults">
-			<div class = "action-header">
-				<span class = "icon" role = "icon"></span>
-
-				<h2>Log:
-					<span class = "title">?</span>
-				</h2>
-			</div>
-			<p>
-				<strong>Started: </strong><span class = "datetimeStarted">unknown</span>.
-				<strong>Finished: </strong><span class = "datetimeFinished">unknown</span>
-			</p>
-			<p>
-				<strong>Exit Code: </strong><span class = "exitCode">unknown</span>
-			</p>
-			<p>
-				<strong>Status: </strong><span class = "status">unknown</span>
-			</p>
+<body>
+<main title="main content">
+  <div id="perma-widget" hidden>
+    <div id="sidebar-toggle-wrapper">
+      <label for="sidebar-toggler" id="sidebar-toggler-button" title="Toggle sidebar" tabindex="0">&#9776;</label>
+    </div>
+    <h1 id="page-title">OliveTin</h1>
+  </div>
 
 
-			<details>
-				<summary>stdout</summary>
-				<pre class = "stdout">
+  <div id="content-sidebar">
+    <input type="checkbox" id="sidebar-toggler" hidden checked />
+    <aside>
+      <ul>
+        <li>Foo</li>
+        <li>Bar</li>
+      </ul>
+    </aside>
+  </div>
+  <fieldset id="section-switcher" title="Sections" hidden>
+    <button id="showActions">Actions</button>
+    <button id="showLogs">Logs</button>
+  </fieldset>
+
+  <section id="contentActions" title="Actions">
+    <fieldset id="root-group" title="Dashboard of buttons">
+    </fieldset>
+  </section>
+
+  <section id="contentLogs" title="Logs">
+    <table title="Logs">
+      <thead>
+      <tr>
+        <th>Timestamp</th>
+        <th>Log</th>
+        <th>Exit Code</th>
+      </tr>
+      </thead>
+      <tbody id="logTableBody" />
+    </table>
+  </section>
+
+  <noscript>
+    <div class="error">Sorry, JavaScript is required to use OliveTin.</div>
+  </noscript>
+</main>
+
+<footer title="footer">
+  <p><img title="application icon" src="OliveTinLogo.png" alt="OliveTin logo" height="1em" class="logo" /> OliveTin</p>
+  <p>
+    <a href="https://docs.olivetin.app" target="_new">Documentation</a> |
+    <a href="https://github.com/OliveTin/OliveTin/issues/new/choose" target="_new">Raise an issue on GitHub</a> |
+    <span>Version: <span id="currentVersion">?</span></span> |
+    <span>Server connection: <span id="serverConnection">?</span></span>
+  </p>
+  <p>
+    <a id="available-version" href="http://olivetin.app" target="_blank" hidden>?</a>
+  </p>
+</footer>
+
+<dialog id="executionResults">
+  <div class="action-header">
+    <span class="icon" role="icon"></span>
+
+    <h2>Log:
+      <span class="title">?</span>
+    </h2>
+  </div>
+  <p>
+    <strong>Started: </strong><span class="datetimeStarted">unknown</span>.
+    <strong>Finished: </strong><span class="datetimeFinished">unknown</span>
+  </p>
+  <p>
+    <strong>Exit Code: </strong><span class="exitCode">unknown</span>
+  </p>
+  <p>
+    <strong>Status: </strong><span class="status">unknown</span>
+  </p>
+
+
+  <details>
+    <summary>stdout</summary>
+    <pre class="stdout">
 					?
 				</pre>
-			</details>
+  </details>
 
-			<details>
-				<summary>stderr</summary>
-				<pre class = "stderr">
+  <details>
+    <summary>stderr</summary>
+    <pre class="stderr">
 					?
 				</pre>
-			</details>
+  </details>
 
-			<form method = "dialog">
-				<button name = "cancel">Close</button>
-			</form>
-		</dialog>
+  <form method="dialog">
+    <button name="cancel">Close</button>
+  </form>
+</dialog>
 
-		<template id = "tplArgumentForm">
-			<dialog>
-				<form class = "action-arguments">
-					<div class = "wrapper">
-						<div class = "action-header">
-							<span class = "icon" role = "icon"></span>
-							<h2>Argument form</h2>
-						</div>
+<template id="tplArgumentForm">
+  <dialog>
+    <form class="action-arguments">
+      <div class="wrapper">
+        <div class="action-header">
+          <span class="icon" role="icon"></span>
+          <h2>Argument form</h2>
+        </div>
 
-						<div class = "arguments"></div>
+        <div class="arguments"></div>
 
-						<div class = "buttons">
-							<input name = "start" type = "submit" value = "Start">
-							<button name = "cancel">Cancel</button>
-						</div>
-					</div>
-				</form>
-			</button>
-		</template>
+        <div class="buttons">
+          <input name="start" type="submit" value="Start">
+          <button name="cancel">Cancel</button>
+        </div>
+      </div>
+    </form>
+    </button>
+</template>
 
-		<template id = "tplActionButton">
-			<div>
-				<button>
-					<span role = "icon" title = "button icon" class = "icon">&#x1f4a9;</span>
-					<span role = "title" class = "title">Untitled Button</span>
-				</button>
+<template id="tplActionButton">
+  <div>
+    <button>
+      <span role="icon" title="button icon" class="icon">&#x1f4a9;</span>
+      <span role="title" class="title">Untitled Button</span>
+    </button>
 
-				<div class = "executions">
-				</div>
-			</div>
-		</template>
+    <div class="executions">
+    </div>
+  </div>
+</template>
 
-		<template id = "tplLogRow">
-			<tr class = "log-row">
-				<td class = "timestamp">?</td>
-				<td>
-					<span class = "icon" role = "icon"></span>
-					<span class = "content">?</span>
+<template id="tplLogRow">
+  <tr class="log-row">
+    <td class="timestamp">?</td>
+    <td>
+      <span class="icon" role="icon"></span>
+      <span class="content">?</span>
 
-					<details>
-						<summary>stdout</summary>
-						<pre class = "stdout">
+      <details>
+        <summary>stdout</summary>
+        <pre class="stdout">
 							?
 						</pre>
-					</details>
+      </details>
 
-					<details>
-						<summary>stderr</summary>
-						<pre class = "stderr">
+      <details>
+        <summary>stderr</summary>
+        <pre class="stderr">
 							?
 						</pre>
-					</details>
+      </details>
 
-					<div class = "tags"></div>
-				</td>
-				<td class = "exit-code">?</td>
-			</tr>
-		</template>
+      <div class="tags"></div>
+    </td>
+    <td class="exit-code">?</td>
+  </tr>
+</template>
 
-		<script type = "text/javascript">
-			/**
-			This is the bootstrap code, which relies on very simple, old javascript
-		  	to at least display a helpful error message if we can't use OliveTin.
-			*/
-			function showBigError (type, friendlyType, message) {
-			  for (const oldError of document.querySelectorAll('div.error').values()) {
-				window.old = oldError;
-				oldError.remove();
-			  }
+<script type="text/javascript">
+  /**
+   This is the bootstrap code, which relies on very simple, old javascript
+   to at least display a helpful error message if we can't use OliveTin.
+   */
+  function showBigError(type, friendlyType, message) {
+    for (const oldError of document.querySelectorAll('div.error').values()) {
+      window.old = oldError;
+      oldError.remove();
+    }
 
-			  console.error('Error ' + type + ': ', message)
+    console.error('Error ' + type + ': ', message)
 
-			  const domErr = document.createElement('div')
-			  domErr.classList.add('error')
-			  domErr.innerHTML = '<h1>Error ' + friendlyType + '</h1><p>' + message + "</p><p><a href = 'http://docs.olivetin.app/err-" + type + ".html' target = 'blank'/>" + type + " error in OliveTin Documentation</a></p>"
+    const domErr = document.createElement('div')
+    domErr.classList.add('error')
+    domErr.innerHTML = '<h1>Error ' + friendlyType + '</h1><p>' + message + "</p><p><a href = 'http://docs.olivetin.app/err-" + type + ".html' target = 'blank'/>" + type + " error in OliveTin Documentation</a></p>"
 
-			  document.getElementById('root-group').appendChild(domErr)
-			}
-		</script>
+    document.getElementById('root-group').appendChild(domErr)
+  }
+</script>
 
-		<script type = "text/javascript" nomodule>
-			showBigError("js-modules-not-supported", "Sorry, your browser does not support JavaScript modules.", null)
-		</script>
+<script type="text/javascript" nomodule>
+  showBigError("js-modules-not-supported", "Sorry, your browser does not support JavaScript modules.", null)
+</script>
 
-		<script type = "module" src = "main.js"></script>
-		<script type = "module" src = "js/websocket.js"></script>
-	</body>
+<script type="module" src="main.js"></script>
+<script type="module" src="js/websocket.js"></script>
+</body>
 </html>
